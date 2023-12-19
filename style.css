@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #b5734c; 
+}
+
+body{
+    height: 120vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    height: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 5vmin;
+}
+
+.container{
+    height: 30vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle{
+    width: 17vmin;
+    height: 17vmin;
+    margin: 20px;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.circle:hover{
+    outline: 6px solid #b5734c;
+}
+
+#stone{
+    background-image: url('images/rock.png');
+}
+
+#paper{
+    background-image: url('images/paper.png');
+}
+
+#scissors{
+    background-image: url('images/scissors.png');
+}
+
+.scores{
+    height: 25vmin;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.score-box{
+    height: 20vmin;
+    width: 20vmin;
+    margin: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-box h1{
+    color: white;
+    font-size: 7vmin;
+}
+
+.score-box h3{
+    font-size: 4vmin;
+    color: white;
+}
+
+.message{
+    height: 9vmin;
+    font-size: 5vmin;
+    color: white;
+    background-color: #b5734c;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.messageWin{
+    background-color: green;
+}
+
+.messageLost{
+    background-color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: #F0FFCE;
+}
+
+footer{
+    height: 8vmin;
+    font-size: 4vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:400px){
+    body{
+        height: 200vmin;
+    }
+    .circle{
+        width: 22vmin;
+        height: 22vmin;
+    }
+}
+
+@media screen and (max-width:275px){
+    body{
+        height: 250vmin;
+    }
+    .container{
+        height: 100vmin;
+        flex-direction: column;
+    }
+    .circle{
+        width: 20vmin;
+        height: 20vmin;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .message{
+        padding: 4px;
+    }
+
+}
